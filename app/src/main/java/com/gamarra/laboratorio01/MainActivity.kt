@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.gamarra.laboratorio01.ui.theme.Laboratorio01Theme
 import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.Button
 
 
 class MainActivity : ComponentActivity() {
@@ -37,7 +38,10 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(text = "¡Hola, soy $name!", fontSize = 24.sp)
-        Text(text = "Curso: Programación en Móviles")
+        Text(text = "Curso: Programación en móviles")
+        Button(onClick =  { } ) {
+            Text(text = "Presióname")
+        }
     }
 }
 
